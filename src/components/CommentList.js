@@ -22,7 +22,8 @@ class CommentList extends Component {
   render() {
     
     return <div>
-        {this.props.comments.map((comment,i)=>{return <Comment comment={comment} key={i} index={i} onDeleteComment={this.handleDeleteComment.bind(this)}/>})}
+        {this.props.comments.map((comment,i)=>{return <Comment comment={comment} key={i} index={i} 
+        onDeleteComment={this.handleDeleteComment.bind(this)}/>})}
     </div>;
   }
 }
